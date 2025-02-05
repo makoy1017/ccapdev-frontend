@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family:'Lalezar', system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: #fee0ad;
+}
+
+
+/* Navigation Bar */
+.navtop {
+    height: 40px;
+    width: 100%;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*debugging*/
+    /* border-color: yellow; 
+    border-style: solid; */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.logo a img {
+    height: 80px; /* Adjust as necessary */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    float: right;
+    text-decoration: none;
+    color: #e08679;
+    font-weight: bold;
+    background-color: #fcebcd;
+    /*debugging*/
+    /* border-color: blue; 
+    border-style: solid; */
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-link { 
+    color: #e08679;
+    text-decoration: none; 
+  } 
+  .nav-link:visited { 
+    color: #e08679;
+    text-decoration: none; 
+  } 
+  .nav-link:hover { 
+    color: #e08679;
+    text-decoration: underline; 
+  } 
+  .nav-link:active { 
+    color: #e08679;
+    text-decoration: none; 
+  }
+  
+
+/* Content Area */
+.content {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.content h2{
+    margin-left: 8%;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    margin-left: 10%; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-element {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cccccc; /* Light gray border */
+}
+
+.grid-element p {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-size: 15px;
+    font-weight: 400px;
+    margin: 0;
+}
+
+/* Flex container for price breakdown and buttons */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+.price-breakdown {
+    flex: 1;
+}
+
+.price-breakdown h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    color: #181818; /* Dark gray text */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.button-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: #ffffff; 
+    background-color: #333333; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Lalezar', system-ui;
+    font-size: 15px; 
+    text-align: center; 
+}
+
+
+  .button-item:visited { 
+    color: #ffffff;
+    text-decoration: none; 
+  } 
+  .button-item:hover { 
+    color:  #555555;
+    text-decoration: none; 
+  } 
+  .button-item:active { 
+    color: #ffffff;
+    text-decoration: none; 
+  }
+
+  .confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.confirmation-buttons a,
+.confirmation-buttons form {
+    margin: 0 10px;
+}
+
