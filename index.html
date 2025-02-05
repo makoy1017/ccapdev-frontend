@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Sign Up</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Logo-->
+    <div class = "logo-container">
+        <img src = "php/uploads/motel-ease_logo.png" >
+    </div>
+
+    
+    <div class="container">
+        <!--Sign in-->
+        <div class="form-container login-container active">
+            <h2>Comfort Unites Convenience</h2>
+            <form id="login-form" action="php/authenticate.php" method="post">
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <div id="login-error-messages" class="error-messages"></div>
+                <div class="toggle-container">
+                    <button id="toggle-login">Login</button>
+                    <div class = "separator">OR</div> 
+                    <button id="toggle-signup">Sign Up</button>
+                </div>          
+            </form>
+        </div>
+
+        <!--Sign Up-->
+        <div class="form-container signup-container">
+            <h2>Track,Achieve,Thrive!</h2>
+            <form id="signup-form" action="php/signup.php" method="post" enctype="multipart/form-data">
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Last Name" name="lastName" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="tel" placeholder="Phone Number" name="phoneNumber" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+                <input type="file" name="profilePicture" required>
+                <div id="signup-error-messages" class="error-messages"></div>
+                <button type="submit">Sign Up</button>
+                <button type="submit">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

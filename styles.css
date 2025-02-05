@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family:'Lalezar', system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: #fee0ad;
+}
+
+
+/* Navigation Bar */
+.navtop {
+    height: 40px;
+    width: 100%;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*debugging*/
+    /* border-color: yellow; 
+    border-style: solid; */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.logo a img {
+    height: 80px; /* Adjust as necessary */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    float: right;
+    text-decoration: none;
+    color: #e08679;
+    font-weight: bold;
+    background-color: #fcebcd;
+    /*debugging*/
+    /* border-color: blue; 
+    border-style: solid; */
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.nav-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-link { 
+    color: #e08679;
+    text-decoration: none; 
+  } 
+  .nav-link:visited { 
+    color: #e08679;
+    text-decoration: none; 
+  } 
+  .nav-link:hover { 
+    color: #e08679;
+    text-decoration: underline; 
+  } 
+  .nav-link:active { 
+    color: #e08679;
+    text-decoration: none; 
+  }
+  
+
+
+/* Content Area */
+.content {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.content a { 
+    color: #eb6959;
+    text-decoration: none; 
+  } 
+  .content:visited { 
+    color: #eb6959;
+    text-decoration: none; 
+  } 
+  .content:hover { 
+    color: #eb6959;
+    text-decoration: none; 
+  } 
+  .content:active { 
+    color: #eb6959;
+    text-decoration: none; 
+  }
+
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    margin-left: 10%; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 95px;
+}
+
+.grid-element {
+    background-color: #F5F5F5;
+    color: #eb6959;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-element h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.grid-element p {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-size: 15px;
+    font-weight: 400px;
+    margin: 0;
+}
+
+
+
+
+
+
